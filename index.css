@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #222831;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header {
+    background-color: #222831;
+    padding: 10px 80px;
+    max-height: 100px;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+}
+
+.header__logo {
+    max-height: 50px;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.nav__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav__item {}
+
+.nav__link {
+    text-decoration: none;
+    color: #EEEEEE;
+    font-size: 16px;
+}
+
+.nav__link:hover {
+    color: #00ADB5;
+}
+
+/* Hero */
+.hero__container {
+    padding-top: 180px;
+    display: flex;
+}
+
+.hero__container_left {
+    height: 280px;
+    display: flex;
+}
+
+.hero__container-box-bottons {
+    margin-top: 70px;
+    text-shadow: 2px 3px 3px #222831;
+    display: flex;
+    gap: 24px;
+}
+
+a.btn {
+    text-decoration: none;
+    color: white;
+    /* background-color: #00ADB5; */
+    padding: 10px 35px;
+    border-radius: 25px;
+}
+
+.btn__download {
+    display: flex;
+    gap: 10px;
+    padding: 10px 35px;
+    border-radius: 25px;
+    background-color: #393E46;
+    text-decoration: none;
+}
+.btn__download a{
+    text-decoration: none;
+    color: white;
+    background-color: #393E46;
+}
+.btn__download img{
+    background-color: #393E46;
+
+}
+.sky {
+    background-color: #00ADB5;
+}
+.sky-bold{
+    background-color: #00ADB5;
+    text-shadow: 2px 4px 3px #070808d6;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+.gray{
+    background: rgb(58 58 59 / 50%);
+    text-shadow: 2px 4px 3px #070808d6;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.hero_right__container-img {
+    height: 700px;
+}
+.arrow_down__box{
+    background-color: #393E46;
+    height: 80px;
+    padding-top: 20px;
+    width: 90px;
+    margin: 50px auto;
+    text-align: center;
+}
+.arrow_down__box img{
+    background-color: #393E46;
+
+}
+
+
+.main__container{
+    padding: 70px;
+    padding-top: 300px;
+    display: flex;
+    gap: 200px;
+    color: white;
+}
+.main__container_left{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.main__container_left-img-about{
+    display: flex;
+    gap: 20px;
+}
+.main__container_left > img:nth-child(1) {
+    align-self: flex-start;
+    margin-bottom: 20px; 
+}
+
+.text-container {
+    max-height: 150px; 
+    overflow: hidden;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.text-container::after {
+    content: '... Read more';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #222831;
+    padding: 0 10px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.text-container.expanded {
+    max-height: none;
+}
+
+.text-container.expanded::after {
+    content: 'Read less';
+    right: 0;
+    bottom: 0;
+    padding: 0 10px;
+}
+
+.toggle-read {
+    display: none;
+}
+
+
+
+
+.main__container_rigth{
+
+}
+.main__container_rigth img{
+    width: 550px;
+    height: 500px;
+    object-fit: cover;
+}
+ .main{
+    border: 1px solid blue;
+
+ }
+
+.main_works {
+    height: 300px; /* Altura de la sección */
+    width: 100%; /* Ancho de la sección */
+    background-image: url('./assets/doodle\ items.svg'); /* Ruta de tu imagen SVG */
+    background-repeat: repeat; /* Repetir la imagen en ambas direcciones */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+    border: 1px solid red;
+}
+.main_works__bottom-cards-container{
+    display: flex;
+    gap: 10px;
+}
+.container-img{
+    border-radius: 20px;
+    width: 375px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(19, 20, 19, 0.5);
+
+}
+.container-img img{
+width: 265px;
+height: 158px;
+object-fit: cover;
+}
+
+/** PORTAFOLIO */
+
+.portafolio-container{
+    margin-top: 150px;
+    padding-block-start: 300px;
+    padding-inline-start: 80px;
+    height: 1000px;
+    background-image: url('./assets/doodle\ items.svg');
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 63px;
+}
+
+
+/* PROYECTOS */
+.projects-container{
+    display: flex;
+    gap: 20px;
+    background-color: transparent;
+}
+.project-container{
+    width: 368px;
+    height: 268px;
+    background: rgb(58 58 59 / 50%);
+    text-shadow: 2px 4px 3px #070808d6;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
