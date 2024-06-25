@@ -1,0 +1,39 @@
+<!-- Conceptos y Ejemplos
+1. Introducción a las Animaciones en CSS
+Concepto: Las animaciones en CSS permiten animar cambios de propiedades a lo largo del tiempo. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .intro-animation {
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    /* Conceptos y Ejemplos */
+/* 1. Introducción a las Animaciones en CSS */
+/* Concepto: Las animaciones en CSS permiten animar cambios de propiedades a lo largo del tiempo. */
+    /* @keyframes: Directiva CSS que define la secuencia de la animación.
+fadeIn: Nombre de la animación, que se puede utilizar con la propiedad animation. */
+    
+/* from: Define el estado inicial de la animación.
+opacity: 0;: Establece la opacidad inicial del elemento en 0 (completamente transparente). */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    </style>
+</head>
+<body>
+    <div class="intro-animation">Hola, Mundo!</div>
+
+
+</body>
+</html>

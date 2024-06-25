@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="timing-function-example">Timing</div>
+
+<style>
+    /* 4. Funciones de Temporización */
+    /* Concepto: Las funciones de temporización definen la velocidad de la animación en diferentes puntos. */
+.timing-function-example {
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+  animation: changeColor 2s ease-in-out infinite;
+  /* animation: changeColor 2s ease-in-out 3; */
+}
+/* number: Un valor numérico que indica cuántas veces se debe reproducir la animación.
+
+Ejemplo: animation-iteration-count: 3; (La animación se reproducirá 3 veces). */
+
+@keyframes changeColor {
+  from { background-color: purple; }
+  to { background-color: orange; }
+}
+</style>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 2. Transiciones CSS
+Concepto: Las transiciones permiten cambiar de un estado a otro suavemente en un período de tiempo.
+
+Ejemplo: -->
+<button class="transition-example">Hover me!</button>
+
+<style>
+.transition-example {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  transition: background-color 0.5s ease-out;
+}
+
+/* 2. Transiciones CSS */
+/* Concepto: Las transiciones permiten cambiar de un estado a otro suavemente en un período de tiempo.*/
+/* 
+linear: La transición tiene una velocidad constante desde el principio hasta el final.
+
+Ejemplo: transition: background-color 0.5s linear;
+ease: La transición empieza lenta, acelera en el medio y luego desacelera al final.
+
+Ejemplo: transition: background-color 0.5s ease;
+ease-in: La transición empieza lenta y luego acelera hacia el final.
+
+Ejemplo: transition: background-color 0.5s ease-in;
+ease-out: La transición empieza rápida y luego desacelera hacia el final.
+
+Ejemplo: transition: background-color 0.5s ease-out;
+ease-in-out: La transición empieza lenta, acelera en el medio y desacelera al final (una combinación de ease-in y ease-out).
+
+Ejemplo: transition: background-color 0.5s ease-in-out;
+cubic-bezier(n,n,n,n): Define una curva personalizada para la transición utilizando una función cúbica de Bézier, donde cada n es un valor entre 0 y 1.
+
+Ejemplo: transition: background-color 0.5s cubic-bezier(0.25, 0.1, 0.25, 1); */
+.transition-example:hover {
+  background-color: green;
+}
+
+</style>
+
+</body>
+</html>

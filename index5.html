@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="advanced-animation">Avanzada</div>
+    <!-- 5. Propiedades de Animación Avanzadas -->
+    <!-- Concepto: Controlan aspectos avanzados de la animación, como repeticiones y direcciones. -->
+<style>
+.advanced-animation {
+  width: 100px;
+  height: 100px;
+  background-color: teal;
+  animation: bounce 2s infinite alternate;
+}
+/* normal: La animación se reproduce en la dirección normal, de principio a fin.
+
+Ejemplo: animation-direction: normal;
+reverse: La animación se reproduce en la dirección inversa, de fin a principio.
+
+Ejemplo: animation-direction: reverse;
+alternate: La animación alterna entre la dirección normal y la inversa en cada ciclo. Esto crea un efecto de ida y vuelta.
+
+Ejemplo: animation-direction: alternate;
+alternate-reverse: La animación alterna entre la dirección inversa y la normal en cada ciclo.
+
+Ejemplo: animation-direction: alternate-reverse;*/
+@keyframes bounce { 
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-50px); }
+  100% { transform: translateY(0); }
+}
+</style>
+
+</body>
+</html>

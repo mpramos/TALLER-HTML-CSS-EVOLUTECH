@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="keyframes-example">Animación</div>
+
+<style>
+    /* 3. Animaciones con @keyframes */
+    /* Concepto: @keyframes define los estados intermedios y finales de una animación. */
+    /* .keyframes-example { ... }:
+
+Esta regla CSS selecciona cualquier elemento con la clase keyframes-example y le aplica los estilos definidos dentro de las llaves {}.
+width: 100px;:
+
+Establece el ancho del <div> en 100 píxeles.
+height: 100px;:
+
+Establece la altura del <div> en 100 píxeles.
+background-color: red;:
+
+Establece el color de fondo del <div> en rojo.
+animation: move 4s infinite;:
+
+animation: Propiedad CSS que aplica una animación al elemento seleccionado.
+move: Nombre de la animación definida (esto se refiere a la animación especificada en @keyframes move).
+4s: Duración de la animación, en este caso 4 segundos.
+infinite: Especifica que la animación se repetirá indefinidamente.
+.keyframes-example {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation: move 4s infinite;
+} */
+
+@keyframes move {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(200px); }
+  100% { transform: translateX(0); }
+}
+/* @keyframes move { ... }: */
+/* 
+@keyframes: Directiva CSS que define la secuencia de la animación.
+move: Nombre de la animación, que se puede utilizar con la propiedad animation.
+0% { transform: translateX(0); }:
+
+0%: Define el estado inicial de la animación.
+transform: translateX(0);: Establece que el elemento no se ha movido horizontalmente desde su posición original al 
+inicio de la animación.
+50% { transform: translateX(200px); }:
+
+50%: Define el estado intermedio de la animación.
+transform: translateX(200px);: Mueve el elemento 200 píxeles a la derecha en el punto medio de la animación.
+100% { transform: translateX(0); }:
+
+100%: Define el estado final de la animación.
+transform: translateX(0);: Establece que el elemento vuelve a su posición original al final de la animación. */
+
+</style>
+
+</body>
+</html>

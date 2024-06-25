@@ -9,11 +9,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <script src="./index.js" defer></script>
+
+<style>
+    .intro-animation {
+      animation: fadeIn 2s ease-in-out;
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    </style>
 </head>
 <body>
     <header class="header">
         <section class="header__container">
-            <img src="./assets/SaulDesign.jpg" alt="">
+            <img src="./assets/SaulDesign.svg" style="background: transparent;" alt="">
             <nav class="header__nav">
                 <div class="nav__section">
                     <ul class="nav__list">
@@ -51,7 +66,8 @@
         <section class="arrow_down__box">
                <img src="./assets/arrow_down.svg" alt=""> 
         </section>
-        <main class="main__container">
+        <main>
+            <section class="main__container">
             <section class="main__container_left">
                 <img src="./assets/note.svg" height="40px">
                 <div class="main__container_left-img-about">
@@ -69,36 +85,13 @@
             <section class="main__container_rigth">
                 <img src="./assets/Group 62.svg" alt="">
             </section>
-
-        </main>
-        <!-- PORTAFOLIO -->
-        
-        <!-- <section class="main">
-            <section class="main_works">
-            <section class="main_works__top">
-                <img src="./My recent works.svg" alt="">
-                <div>
-                    <a href="#" class="btn sky">All</a>
-                    <a href="#" class="btn sky">UI</a>
-                    <a href="#" class="btn sky">Web Design</a>
-                </div>
-
             </section>
-            <section class="main_works__bottom">
-                <div class="main_works__bottom-cards-container">
-                    <div class="container-img">
-                        <img src="portafolio1.jpg" alt="">
-                    </div>
-                    
-                </div>
-            </section>
-        </section>
-    </section> -->
-    <section class="portafolio-container">
-            <img src="./My recent works.svg" style="width: 500px; background-color: transparent;" alt="" srcset="">
-            <div class="portafolio-buttons">
-                <div class="button">
-                    <a href="#" class="btn sky-bold">All</a>
+
+            <section class="portafolio-container">
+                <img src="./assets/My recent works.svg" style="width: 500px; background-color: transparent;" alt="" srcset="">
+                <div class="portafolio-buttons">
+                    <div class="button">
+                        <a href="#" class="btn sky-bold">All</a>
                     <a href="#" class="btn gray">UI</a>
                     <a href="#" class="btn gray">UX</a>
                     <a href="#" class="btn gray">Web Design</a>
@@ -118,10 +111,63 @@
                     
                 </section>
             </div>
-            <footer>
-                
-            </footer>
-    </section>
+        </section>
 
-</body>
-</html>
+        <section class="formulario">
+            <section class="project-left-container">
+                <img src="./assets/Got a project in mind_ (1).svg" style="width: 550px;" alt="">
+                <section class="project-left">
+                    <img src="./assets/arrow_right.svg" alt="">
+                    <img src="./assets/imagenprojectmind.svg" alt="">
+                </section>
+            </section>
+            <section class="project-right-container">
+                <form action="https://formspree.io/f/mpwaaabe" method="post">
+                    <img src="./assets/keyboard.svg" alt="" srcset="">
+                    <div class="project-right-container-top">
+                        <div>
+
+                            <div>
+                                <label for="text">Your name</label>
+                            </div>
+                            <div class="container-input">
+                                <input  name="text" class="input-text" type="text" placeholder="Name">
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <label for="">Your email</label>
+                            </div>
+                            <div class="container-input">
+                                <input  name="email"  class="input-text" type="email" placeholder="Email">
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <div class="project-right-container-bottom">
+                        <div>
+                            <label for="">Your message</label>
+                        </div>
+                        <textarea name="message"   cols="60%" rows="10%" class="input-text" id=""></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Send</button>
+
+                    </div>
+                    <img src="./assets/mail.svg" alt="" srcset="">
+                </form>
+
+            </section>
+            <section>
+
+            </section>
+        </section>
+       </main>
+       <div class="intro-animation">Hola, Mundo!</div>
+            <footer>
+                                   
+            </footer>
+        </section>
+        
+    </body>
+    </html>
